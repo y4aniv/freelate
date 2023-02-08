@@ -147,7 +147,7 @@ export default function Index() {
               Le faux justificatif de retard généré par FreeLate n'a aucune
               valeur juridique et ne peut être utilisé à des fins officielles ou
               pour justifier un retard. Il est destiné à un usage personnel
-              uniquement. En utilisant appuyant sur "Générer un justificatif",
+              uniquement. En appuyant sur "Générer un justificatif",
               vous acceptez de vous conformer à ces conditions et assumez toute
               responsabilité pour tout usage illégal ou non autorisé du faux
               justificatif de retard généré.
