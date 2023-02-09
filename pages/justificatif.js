@@ -14,6 +14,11 @@ export default function Justificatif() {
   const { start } = router.query;
 
   useEffect(() => {
+    
+  if(!type || !line || !date || !time || !duration || !station || !start){
+    window.location.href = "./"
+  }
+
     if (duration == 15) {
       document.getElementsByClassName("check30")[0].style.display = "none";
       document.getElementsByClassName("check15")[0].style.display = "block";
