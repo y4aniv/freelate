@@ -3,10 +3,6 @@ import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import PagePreviousIcon from '@rsuite/icons/PagePrevious';
-import { Button } from "rsuite";
-import "rsuite/dist/rsuite.min.css";
-import * as htmlToImage from 'html-to-image';
-
 
 export default function Justificatif() {
   const router = useRouter();
@@ -42,17 +38,6 @@ export default function Justificatif() {
     document.getElementsByClassName("deliveryStation")[0].innerText = station;
     var node = document.getElementById('justificatif');
   });
-
-  const domEl = useRef(null);
-
-  const downloadImage = async () => {
-    const dataUrl = await htmlToImage.toPng(domEl.current, { quality: 3});
-
-    const link = document.createElement('a');
-    link.download = 'freelate.png';
-    link.href = dataUrl;
-    link.click();
-  };
   return (
     <>
       <Head>
@@ -70,7 +55,7 @@ export default function Justificatif() {
         <PagePreviousIcon class="retour" onClick={()=>{
           Router.push("/")
         }}/>
-        <div id="justificatif" ref={domEl} >
+        <div id="justificatif"  >
           <div class="check15"></div>
           <div class="check30"></div>
           <p class="natureIncident"></p>
@@ -89,9 +74,6 @@ export default function Justificatif() {
             className="JustificatifMockup"
           />
         </div>
-        <Button className="print" size="lg" onClick={()=>{
-            downloadImage()
-          }}>Télécharger le justificatif</Button>
       </div>
     </>
   )
