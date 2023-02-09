@@ -1,7 +1,7 @@
 {
     "theme_color": "#ED64A6",
     "background_color": "#ffffff",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "FreeLate - G\u00e9n\u00e9rez vos justificatifs de retard directement en ligne",
