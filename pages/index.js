@@ -11,7 +11,7 @@ import {
   Radio,
   Button,
 } from "rsuite";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Router from "next/router";
 
 export default function Index() {
@@ -20,6 +20,15 @@ export default function Index() {
   var [station, setStation] = useState("Null");
   var [date, setDate] = useState("Null");
   var [duration, setDuration] = useState("Null");
+  var [btnDisabled, setBtnDisabled] = useState(true)
+
+  useEffect(()=>{
+    if(line == "Null" || type == "Null" || station == "Null" || date == "Null" || duration == "Null" ){
+      setBtnDisabled(true)
+    }else{
+      setBtnDisabled(false)
+    }
+  })
   return (
     <>
       <Head>
@@ -121,6 +130,7 @@ export default function Index() {
           </Form>
           <Stack direction="column" className={styles.submitButtonStack}>
             <Button
+              disabled={btnDisabled}
               className={styles.submitButton}
               size="lg"
               onClick={() => {

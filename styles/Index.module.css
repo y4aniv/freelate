@@ -29,3 +29,6 @@
 .terms{
   text-align: center !important;
 }
+.submitButton:disabled{
+  opacity: 0.5;
+}
