@@ -18,6 +18,8 @@
 #justificatif {
   font-family: "Lato";
   user-select: none;
+  position: relative;
+  top: 50px;
 }
 .check15 {
   position: absolute;
@@ -110,4 +112,11 @@ l {
   background-position: center;
   width: 2.4vw;
   height: 2.4vw;
+}
+.retour{
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
 }
