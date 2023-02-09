@@ -19,7 +19,7 @@
   font-family: "Lato";
 }
 .check15 {
-  position: fixed;
+  position: absolute;
   top: 25.1vw;
   left: 11.7vw;
   background: url("/check.png");
@@ -32,7 +32,7 @@
 }
 
 .check30 {
-  position: fixed;
+  position: absolute;
   top: 30.3vw;
   left: 11.7vw;
   background: url("/check.png");
@@ -45,14 +45,14 @@
 }
 
 .JustificatifMockup {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: auto;
   z-index: -11;
 }
 
 .natureIncident {
-  position: fixed;
+  position: absolute;
   font-size: 2.435vw;
   top: 40.8vw;
   left: 11.4vw;
@@ -61,7 +61,7 @@
 }
 
 .incidentDate {
-  position: fixed;
+  position: absolute;
   font-size: 2.435vw;
   top: 46.5vw;
   left: 22.4vw;
@@ -70,7 +70,7 @@
 }
 
 .deliveryDate {
-  position: fixed;
+  position: absolute;
   font-size: 2.435vw;
   top: 54.6vw;
   left: 33.7vw;
@@ -79,7 +79,7 @@
 }
 
 .deliveryStation {
-  position: fixed;
+  position: absolute;
   font-size: 2.435vw;
   top: 57.5vw;
   left: 13.4vw;
@@ -88,7 +88,7 @@
 }
 
 .agent {
-  position: fixed;
+  position: absolute;
   font-size: 2.435vw;
   top: 60.4vw;
   left: 23.2vw;
@@ -101,10 +101,9 @@ l {
 }
 
 .icon {
-  position: fixed;
+  position: absolute;
   top: 44.06vw;
   left: 23vw;
-  background: url("/5.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
