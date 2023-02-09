@@ -14,12 +14,15 @@
   font-size: 10px;
   margin-top: 10px;
 }
-
+.container{
+  position: absolute;
+  top: 50px;
+}
 #justificatif {
   font-family: "Lato";
   user-select: none;
   position: relative;
-  top: 50px;
+  height: 125vw;
 }
 .check15 {
   position: absolute;
@@ -115,8 +118,23 @@ l {
 }
 .retour{
   font-size: 30px;
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 30px;
   cursor: pointer;
+  z-index: 1000;
+}
+.print{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ED64A6 !important;
+  color: white !important;
+  position: relative;
+}
+.print:hover{
+  background-color: #ED64A6 !important;
+  color: white !important;
+  position: relative;
 }
