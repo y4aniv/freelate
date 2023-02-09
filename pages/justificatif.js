@@ -45,7 +45,8 @@ export default function Justificatif() {
         </title>
         <meta
           name="description"
-          content="Un retard ? Ne paniquez plus, FreeLate est là pour vous ! Générez dès maintenant vos justificatifs pour les 21 lignes de métro et de RER administré par la RATP."
+          content="About
+          Un retard ? Ne paniquez plus, FreeLate est là pour vous ! Générez dès maintenant vos justificatifs pour les 20 lignes de métro et de RER administrées par la RATP."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
