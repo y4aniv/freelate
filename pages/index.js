@@ -144,10 +144,17 @@ export default function Index() {
                   minute: "2-digit",
                 });
                 let Time = new Date(date);
-                Time.setHours(Time.getHours() - 1);
-                Time.setMinutes(Time.getMinutes() + 12);
+                function formatNumber(number) {
+                  return (number < 10 ? '0' : '') + number.toString();
+                }
+                if(duration == "15"){
+                  Time.setMinutes(Time.getMinutes() - 12);
+                }else{
+                  Time.setHours(Time.getHours() - 1);
+                  Time.setMinutes(Time.getMinutes() + 12);
+                }
                 Router.push(
-                  `/justificatif?type=${type}&line=${line}&date=${dateOnly}&time=${timeOnly}&duration=${duration}&station=${station}&start=${Time.getHours()}:${Time.getMinutes()}`
+                  `/justificatif?type=${type}&line=${line}&date=${dateOnly}&time=${timeOnly}&duration=${duration}&station=${station}&start=${formatNumber(Time.getHours())}:${formatNumber(Time.getMinutes())}`
                 );
               }}
             >

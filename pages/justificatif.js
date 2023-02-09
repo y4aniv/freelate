@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Justificatif() {
   const router = useRouter();
@@ -35,6 +35,7 @@ export default function Justificatif() {
       "incidentDate"
     )[0].innerHTML = `${date} <l>à</l> ${start}`;
     document.getElementsByClassName("deliveryStation")[0].innerText = station;
+    var node = document.getElementById('justificatif');
   });
   return (
     <>
@@ -50,7 +51,7 @@ export default function Justificatif() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div>
-        <div id="justificatif">
+        <div id="justificatif" >
           <div class="check15"></div>
           <div class="check30"></div>
           <p class="natureIncident"></p>
@@ -61,7 +62,7 @@ export default function Justificatif() {
           <p class="agent">
             PW{10000 + Math.floor(Math.random() * (99999 - 10000 + 1))}
           </p>
-
+  
           <Image
             src="/JustificatifRetard.png"
             width={420 * 2}
@@ -71,5 +72,5 @@ export default function Justificatif() {
         </div>
       </div>
     </>
-  );
+  )
 }
