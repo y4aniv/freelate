@@ -17,6 +17,7 @@
 
 #justificatif {
   font-family: "Lato";
+  user-select: none;
 }
 .check15 {
   position: absolute;
