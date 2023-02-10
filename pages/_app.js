@@ -7,8 +7,8 @@ function FreeLate({ Component, pageProps }) {
     const regex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
     return regex.test(navigator.userAgent);
   };
-  if(isMobile == true){
-
+  console.log(isMobile)
+  if(isMobile() == true){
   return (
     <>
       <Component {...pageProps} />
