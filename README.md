@@ -16,13 +16,13 @@ Un retard ? Ne paniquez plus, FreeLate est là pour vous ! Générez dès mainte
 ## Installation
 Pour pouvoir lancé  FreeLate en local voici les instructions à suivre :
 
-- Télécharger le dépôt Github
+- Télécharger le dépôt Github:
 ```git clone https://github.com/y4aniv/freelate.git```
-- Accéder au dossier 
+- Accéder au dossier:
 ```cd ./freelate/```
-- Installer les dépendances
+- Installer les dépendances:
 ```npm install``` ou ```yarn add```
-- Exécuter le code
+- Exécuter le code:
 - ```npm run dev``` ou ```yarn run dev```
 
 Une fois les commandes exécutées, vous pourrez accéder à ```localhost:3000``` afin d'accéder à FreeLate
