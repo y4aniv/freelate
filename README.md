@@ -6,7 +6,7 @@
 Un retard ? Ne paniquez plus, FreeLate est là pour vous ! Générez dès maintenant vos justificatifs pour les 20 lignes de métro et de RER administrées par la RATP.
 
 ## Introduction
-**FreeLate** est une  web-app  qui permet à ces utilisateurs de  générer  de faux justificatifs de retard de la RATP en fonction de nombreux paramètre tel que la ligne, l'heure de l'incident ou sa durée.
+**FreeLate** est une  web-app  qui permet à ces utilisateurs de  générer  de faux justificatifs de retard de la RATP en fonction de nombreux paramètres tel que la numero de la ligne, l'heure de l'incident ou encore sa durée.
 
 ## Technologies utilisées
 - NextJs
@@ -14,7 +14,7 @@ Un retard ? Ne paniquez plus, FreeLate est là pour vous ! Générez dès mainte
 - PWA
 
 ## Installation
-Pour pouvoir lancé  FreeLate en local voici les instructions à suivre :
+Pour exécuter FreeLate en local voici les instructions à suivre :
 
 - Télécharger le dépôt Github:
 ```git clone https://github.com/y4aniv/freelate.git```
@@ -22,10 +22,9 @@ Pour pouvoir lancé  FreeLate en local voici les instructions à suivre :
 ```cd ./freelate/```
 - Installer les dépendances:
 ```npm install``` ou ```yarn add```
-- Exécuter le code:
-- ```npm run dev``` ou ```yarn run dev```
+- Exécuter le code: ```npm run dev``` ou ```yarn run dev```
 
-Une fois les commandes exécutées, vous pourrez accéder à ```localhost:3000``` afin d'accéder à FreeLate
+Une fois les commandes exécutées, accédez à ```localhost:3000``` pour utiliser FreeLate
 
 ## Juridique
 Le faux justificatif de retard généré par FreeLate n'a aucune valeur juridique et ne peut être utilisé à des fins officielles ou pour justifier un retard. Il est destiné à un usage personnel uniquement. En appuyant sur "Générer un justificatif", vous acceptez de vous conformer à ces conditions et assumez toute responsabilité pour tout usage illégal ou non autorisé du faux justificatif de retard généré.
