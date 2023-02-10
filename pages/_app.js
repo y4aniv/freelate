@@ -12,7 +12,7 @@ function FreeLate({ Component, pageProps }) {
     };
     setMobile(isMobile())
   })
-  if(isMobile() == true){
+  if(isMobile == true){
   return (
     <>
       <Component {...pageProps} />
