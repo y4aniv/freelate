@@ -1,13 +1,17 @@
 import { Analytics } from '@vercel/analytics/react';
+import { useEffect, useState } from 'react';
 import "../styles/globals.css"
 import Head from "next/head";
 
 function FreeLate({ Component, pageProps }) {
-  const isMobile = () => {
-    const regex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    return regex.test(navigator.userAgent);
-  };
-  console.log(isMobile)
+  var [isMobile, setMobile] = useState(null)
+  useEffect(()=>{
+    const isMobile = () => {
+      const regex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+      return regex.test(navigator.userAgent);
+    };
+    setMobile(isMobile())
+  })
   if(isMobile() == true){
   return (
     <>
