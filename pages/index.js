@@ -84,16 +84,16 @@ export default function Index() {
                 Nom de la station délivrant le justificatif
               </Form.ControlLabel>
               <AutoComplete
-                data={require("../data.json").stations[line]}
-                placeholder="Voltaire, République, Campo-Formio, ..."
-                size="lg"
-                onChange={(e) => {
-                  if (e == "") {
-                    setStation("Null");
-                  }
-                  setStation(e);
-                }}
-              />
+    data={Object.values(require("../data.json").stations).flat()}
+    placeholder="Voltaire, République, Campo-Formio, ..."
+    size="lg"
+    onChange={(e) => {
+        if (e == "") {
+            setStation("Null");
+        }
+        setStation(e);
+    }}
+/>
             </Form.Group>
             <Form.Group controlId="deliveryTime">
               <Form.ControlLabel>
