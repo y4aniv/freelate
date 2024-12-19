@@ -6,7 +6,17 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
   },
   "dependencies": {
     "next": "15.1.2",
