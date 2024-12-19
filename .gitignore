@@ -1,6 +1,0 @@
-/node_modules
-/.next
-public/workbox-*.js.map
-public/workbox-*.js
-public/sw.js.map
-public/sw.js
